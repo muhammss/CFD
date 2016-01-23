@@ -1,0 +1,15 @@
+%NEW FILE
+from pylab import *
+#Import the TDMA solver code
+from tdma import tdma_solve
+#Define Grid Size
+n = 10
+#Grid spacing
+dx = 0.1/n
+#Conductivity of the material
+k = 0.1
+#Heat Transfer coefficients on the left and right faces
+h_r = 5.0
+h_l = 30.0
+#Temperature of the surroundings of left and right faces
+T_l = 300.0
