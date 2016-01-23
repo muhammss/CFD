@@ -1,8 +1,4 @@
-from pylab import *
-#Import the TDMA solver code
-from tdma import tdma_solve
-#Define Grid Size
-n = 10
+
 #Grid spacing
 dx = 0.1/n
 #Conductivity of the material
@@ -26,6 +22,7 @@ A[n] = k/dx + h_r
 Au = -1*ones((n+1, 1))
 #Left Boundary condition
 Au[0] = -k/dx
+Au[0]= -k/dx
 #Filling up the lower diagonal of the matrix to be solved
 Ad = -1*ones((n+1, 1))
 #Right Boundary condition
